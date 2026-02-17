@@ -6,6 +6,30 @@
   <title>Maksym Savychenko</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
+    .hero{
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 26px;
+  align-items: center;
+  margin-top: 28px;
+}
+.hero-photo{
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 24px;
+  border: 1px solid #1e293b;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+@media (max-width: 720px){
+  .hero{
+    grid-template-columns: 1fr;
+  }
+  .hero-photo{
+    width: 160px;
+    height: 160px;
+  }
+}
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
@@ -67,10 +91,15 @@
   <h1>Максим Савиченко</h1>
   <h2>Лідер трансформації бізнесу • Архітектор страхових рішень • AI-driven стратег</h2>
 
-  <p>
-    Я працюю на перетині <span class="highlight">бізнесу, ризику, продукту та AI</span>.
-    Моє професійне середовище — складні B2B-моделі, регульовані ринки та портфельна економіка.
-  </p>
+<div class="hero">
+  <img class="hero-photo" src="assets/img/profile.jpg" alt="Максим Савиченко">
+  <div class="hero-text">
+    <p>
+      Я працюю на перетині <span class="highlight">бізнесу, ризику, продукту та AI</span>.
+      Моє професійне середовище — складні B2B-моделі, регульовані ринки та портфельна економіка.
+    </p>
+  </div>
+</div>
 
   <div class="section">
     <h3>Моя історія</h3>
