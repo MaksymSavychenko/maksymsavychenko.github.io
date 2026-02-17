@@ -92,6 +92,33 @@
   background: rgba(56,189,248,0.18);
 }
   
+.team-hover{
+  position: relative;
+  color: #38bdf8;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.team-preview{
+  position: absolute;
+  top: 28px;
+  left: 0;
+  width: 280px;
+  border-radius: 18px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  border: 1px solid rgba(148,163,184,0.18);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.25s ease;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.team-hover:hover .team-preview{
+  opacity: 1;
+  transform: translateY(0);
+}
+
 h1 {
   font-size: 44px;
   margin-bottom: 10px;
@@ -168,8 +195,13 @@ h2 {
     </p>
 
     <p>
-      Паралельно я будував команду. Не просто відділ продажів — систему.
-      Людей, які розуміють продукт, мислять портфелем і працюють на довгострокову стійкість.
+      Паралельно я будував 
+<span class="team-hover">
+        команди. 
+    <img src="/assets/img/team-1.jpg" alt="Команда" class="team-preview">
+</span>
+      Не просто відділи продажів — системи. Людей, які розуміють продукт, мислять портфелем і працюють на довгострокову стійкість. 
+      І разом із ними зростав як лідер.
     </p>
 
     <p>
